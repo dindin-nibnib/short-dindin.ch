@@ -5,10 +5,16 @@ const links = new Map([
 ]);
 
 onMounted(() => {
-	if (links.has(route.params.slug[0])) {
-		window.location.href = links.get(route.params.slug[0]);
+	console.log(links);
+	if (route.params.code instanceof Array) {
+		window.location.href = "/";
+		return;
+	}
+
+	if (links.has(route.params.code)) {
+		window.location.href = links.get(route.params.code);
 	} else {
-		window.location.href = "/404";
+		window.location.href = "/";
 	}
 });
 

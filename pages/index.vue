@@ -12,6 +12,8 @@
 				<ul>
 					<li>
 						<NuxtLink to="/vsc">vsc - Visual Studio Code installer</NuxtLink>
+						<NuxtLink to="/pwned">pwned - Have I been pned?</NuxtLink>
+						<NuxtLink to="/mld">mld - DrawSql.app</NuxtLink>
 					</li>
 				</ul>
 			</nav>

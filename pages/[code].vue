@@ -2,7 +2,7 @@
 const route = useRoute();
 const links = new Map([
 	["vsc", "https://code.visualstudio.com/"],
-	["pwned", "https://haveibeenpned.com/"],
+	["pwned", "https://haveibeenpwned.com/"],
 	["mld", "https://drawsql.app/"],
 ]);
 

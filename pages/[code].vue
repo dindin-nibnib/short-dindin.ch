@@ -1,29 +1,31 @@
 <script lang="ts" setup>
 const route = useRoute();
 const links = new Map([
-	["vsc", "https://code.visualstudio.com/"],
-	["pwned", "https://haveibeenpwned.com/"],
-	["mld", "https://drawsql.app/"],
+  ["vsc", "https://code.visualstudio.com/"],
+  ["pwned", "https://haveibeenpwned.com/"],
+  ["mld", "https://drawsql.app/"],
+  ["rr", "https://www.youtube.com/watch?v=a3Z7zEc7AXQ"],
 ]);
 
 onMounted(() => {
-	console.log(links);
-	if (route.params.code instanceof Array) {
-		window.location.href = "/";
-		return;
-	}
+  console.log(links);
+  if (route.params.code instanceof Array) {
+    window.location.href = "/";
+    return;
+  }
 
-	if (links.has(route.params.code)) {
-		window.location.href = links.get(route.params.code);
-	} else {
-		window.location.href = "/";
-	}
+  if (links.has(route.params.code)) {
+    window.location.href = links.get(route.params.code);
+  } else {
+    window.location.href = "/";
+  }
 });
-
 </script>
 
 <template>
-	<div class="bg-slate-300 dark:bg-slate-800 dark:text-white h-screen flex flex-row items-center justify-center">
-		<h1>Redirecting...</h1>
-	</div>
-</template>	
+  <div
+    class="bg-slate-300 dark:bg-slate-800 dark:text-white h-screen flex flex-row items-center justify-center"
+  >
+    <h1>Redirecting...</h1>
+  </div>
+</template>

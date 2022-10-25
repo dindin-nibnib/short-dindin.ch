@@ -22,6 +22,9 @@
           <li>
             <NuxtLink to="/mld">mld - DrawSql.app</NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/rr">rr - Check it out yourself!</NuxtLink>
+          </li>
         </ul>
       </nav>
     </div>
